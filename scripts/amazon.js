@@ -107,7 +107,13 @@ if(matchingItem){
 }) 
 }
 
+let cartQuantity = 0;
 
-console.log(cart);
+cart.forEach((item)=>{
+cartQuantity += item.quantity;
+})
+
+document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
+
 })
 })
